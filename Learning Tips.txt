@@ -1,0 +1,37 @@
+df.tail()>>>>>>shows the last 5 entries
+
+
+svm model calling>>>from sklearn.svm import SVC
+
+
+sns.heatmap(confusion_metrics(y_test,prediction),annot=True)
+
+SVC=support vector classifier
+
+
+
+***** Feature scaling brings all the values into the range[0,1]
+(Unity_based normalisation)
+
+
+
+if X` is the normalized value of X,
+then, 
+	X`= (X-X_min)/(X_max-X_min)
+
+normal_X_train_1=(X_train-X_train.min())/(X_train.max()-X_train.min())
+
+
+grid_search : 
+
+param_grid={'C':[.1,1,10,100,100],'gamma' : [1,.1,.01,.001,.0001],'kernel':['rbf']}
+
+from sklearn.model_selection import GridSearchCV
+
+GridSearchCV helps us to choose the better c and gamma value which are responsible for punishing the model
+
+
+
+
+
+
